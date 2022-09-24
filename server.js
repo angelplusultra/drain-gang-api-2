@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
 const PORT = 8000
+const cors = require('cors')
 
+
+
+app.use(cors)
 const poems = {
     "A Walk in Valhalla":{
         "body": "Hell awaits the wonderous soul who binds the crest of matrinous glory, oh does it set ye breast a flutter?",
